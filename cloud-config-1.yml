@@ -8,12 +8,12 @@ ssh_authorized_keys:
 coreos:
   etcd2:
     discovery: https://discovery.etcd.io/29155396651ef53b96016dddce068760
-    advertise-client-urls: http://192.168.50.65:2379
-    initial-advertise-peer-urls: http://192.168.50.65:2380
-    listen-client-urls: http://192.168.50.65:2379
-    listen-peer-urls: http://192.168.50.65:2380
+    advertise-client-urls: http://192.168.50.254:2379
+    initial-advertise-peer-urls: http://192.168.50.254:2380
+    listen-client-urls: http://192.168.50.254:2379
+    listen-peer-urls: http://192.168.50.254:2380
   fleet:
-    public-ip: 192.168.50.65
+    public-ip: 192.168.50.254
   units:
     - name: etcd2.service
       command: start
